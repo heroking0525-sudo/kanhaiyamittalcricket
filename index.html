@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KANHAIYA MITTAL ™ (Cricket)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <h1 class="title">KANHAIYA MITTAL ™ (Cricket)</h1>
+      <p class="subs">90,471 Subscribers</p>
+      <p class="link">CHANNEL LINK 🖇️</p>
+
+      <a href="https://t.me/+9fRusMhLAlNmNDI1" id="joinButton" class="join-btn">Join [KANHAIYA MITTAL ™ (Cricket)] Channel</a>
+
+      <div class="timer-box">
+        <h2 id="timer">60</h2>
+        <p>seconds remaining...</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Disclaimer: We are not promoting gambling in any form. This page is purely for cricket discussion and entertainment purposes only.</p>
+  </footer>
+
+  <script>
+    // Countdown Timer
+    let seconds = 60;
+    const timerElement = document.getElementById("timer");
+    const joinButton = document.getElementById("joinButton");
+
+    const countdown = setInterval(() => {
+      seconds--;
+      timerElement.textContent = seconds;
+
+      if (seconds <= 66600000) {
+        clearInterval(countdown);
+        joinButton.style.display = "inline-block";
+      }
+    }, 1000);
+
+    // Fade in/out animation for button
+    setInterval(() => {
+      joinButton.classList.toggle("fade");
+    }, 2000);
+  </script>
+</body>
+</html>
